@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Chávez | Marketing Digital & Estrategias Comerciales</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Especialista en Marketing Digital, Estrategias Comerciales y Gestión de Clientes con +15 años de experiencia internacional. Transformo datos en decisiones y estrategias en resultados.">
+    <meta name="keywords" content="Marketing Digital, Estrategias Comerciales, Gestión de Clientes, Tecnología, Sistemas, Gastronomía, Buenos Aires, Argentina, CV, Portfolio">
+    <meta name="author" content="Alejandro Chávez">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://astroclick76-clow.github.io/cv-landing/">
+    <meta property="og:title" content="Alejandro Chávez | Marketing Digital & Estrategias Comerciales">
+    <meta property="og:description" content="Especialista en Marketing Digital con +15 años de experiencia internacional. Transformo datos en decisiones y estrategias en resultados.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://astroclick76-clow.github.io/cv-landing/">
+    <meta property="twitter:title" content="Alejandro Chávez | Marketing Digital & Estrategias Comerciales">
+    <meta property="twitter:description" content="Especialista en Marketing Digital con +15 años de experiencia internacional. Transformo datos en decisiones y estrategias en resultados.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💼</text></svg>">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <style>
+        /* Reset y variables */
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #1a252f;
+            --text: #333;
+            --text-light: #7f8c8d;
+            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+            --border-radius: 12px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header / Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .hero-description {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: rgba(255,255,255,0.8);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+        
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(231, 76, 60, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary);
+            border-color: white;
+        }
+        
+        /* Sections */
+        .section {
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 60px;
+        }
+        
+        /* About */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        @media (min-width: 992px) {
+            .about-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, rgba(52, 152, 219, 0.1) 0%, rgba(52, 152, 219, 0) 100%);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--secondary);
+            margin-top: 30px;
+        }
+        
+        /* Experience */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .experience-card {
+            background: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .experience-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .experience-date {
+            display: inline-block;
+            background: var(--light);
+            color: var(--secondary);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .experience-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .experience-company {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .skill-category {
+            background: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .skill-category h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .skill-list {
+            list-style: none;
+        }
+        
+        .skill-item {
+            margin-bottom: 15px;
+        }
+        
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background: var(--light);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .skill-level {
+            height: 100%;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+            border-radius: 4px;
+        }
+        
+        /* Contact */
+        .contact-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: white;
+        }
+        
+        .contact-section .section-title,
+        .contact-section .section-subtitle {
+            color: white;
+        }
+        
+        .contact-section .section-subtitle {
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 25px;
+            background: rgba(255,255,255,0.1);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: var(--transition);
+        }
+        
+        .contact-item:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .contact-details h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .contact-details p {
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .footer-description {
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-badge-check"></i> Especialista en Marketing Digital
+                </div>
+                <h1 class="hero-title">ALEJANDRO CHÁVEZ</h1>
+                <h2 class="hero-subtitle">Marketing Digital & Estrategias Comerciales</h2>
+                <p class="hero-description">
+                    Especialista en <strong>Marketing Digital, Estrategias Comerciales y Gestión de Clientes</strong> con +15 años de experiencia internacional. Transformo datos en decisiones y estrategias en resultados tangibles.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Contactar
+                    </a>
+                    <a href="cv.pdf" class="btn btn-secondary" download>
+                        <i class="fas fa-download"></i> Descargar CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <p class="section-subtitle">+15 años transformando estrategias en resultados</p>
+            
+            <div class="about-content">
+                <div>
+                    <p class="about-text">
+                        Especialista en <strong>Marketing Digital, Estrategias Comerciales y Gestión de Clientes</strong> con experiencia internacional en sectores de tecnología, sistemas y gastronomía. Mi enfoque combina análisis de datos, optimización de procesos y liderazgo de equipos para generar resultados medibles.
+                    </p>
+                    <p class="about-text">
+                        He liderado proyectos en múltiples países (Venezuela, México, Argentina), desarrollando estrategias 360º que incrementan la satisfacción del cliente, expanden carteras comerciales y optimizan operaciones.
+                    </p>
+                </div>
+                <div>
+                    <div class="highlight">
+                        <h3><i class="fas fa-trophy"></i> Logros Destacados</h3>
+                        <ul>
+                            <li>✅ +35% satisfacción del cliente</li>
+                            <li>✅ +40% crecimiento cartera clientes</li>
+                            <li>✅ -25% errores con sistemas QA</li>
+                            <li>✅ +60% engagement redes sociales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <p class="section-subtitle">Trayectoria internacional con resultados demostrables</p>
+            
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-date">2020 - 2023</div>
+                    <h3 class="experience-title">Technical Customer Manager</h3>
+                    <div class="experience-company">Paraíso Creativo C.A / Kodland Edu</div>
+                    <p>Gestión integral del ciclo de vida del cliente, optimización de procesos y mejora continua de funcionalidades tecnológicas.</p>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-date">2016 - 2019</div>
+                    <h3 class="experience-title">Gerente de Ventas</h3>
+                    <div class="experience-company">Avante Soluciones en Computación S.L</div>
+                    <p>Desarrollo e implementación de estrategias comerciales B2B, expansión de cartera de clientes en sector tecnológico.</p>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-date
