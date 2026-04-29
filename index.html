@@ -3,108 +3,598 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejandro Chávez | CV Profesional</title>
-    
-    <meta name="description" content="Profesional con más de 15 años de experiencia en estrategias de ventas, marketing, atención al cliente y gestión de proyectos.">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <title>Alejandro Chávez | Marketing Digital & Estrategias Comerciales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary: #111827;
-            --secondary: #1f2937;
-            --accent: #3b82f6;
-            --light: #f3f4f6;
-            --text: #374151;
-            --text-light: #6b7280;
-            --border: #e5e7eb;
-            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            --transition: all 0.3s ease;
-            --radius: 0.5rem;
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text); background: var(--light); }
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
-        
-        /* Header */
-        .header { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid var(--border); padding: 1rem 0; }
-        .nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
-        .nav-links { display: flex; gap: 2rem; list-style: none; }
-        .nav-links a { color: var(--text); text-decoration: none; font-weight: 500; transition: var(--transition); }
-        .nav-links a:hover { color: var(--accent); }
-        
-        /* Hero */
-        .hero { min-height: 100vh; display: flex; align-items: center; padding-top: 80px; background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%); }
-        .hero-content { max-width: 800px; }
-        .hero-badge { display: inline-block; background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; margin-bottom: 1.5rem; }
-        .hero-title { font-family: 'Space Grotesk', sans-serif; font-size: 3.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 1rem; color: var(--primary); }
-        .hero-subtitle { font-size: 1.5rem; color: var(--text-light); margin-bottom: 2rem; }
-        .hero-contact { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2rem; }
-        .contact-item { display: flex; align-items: center; gap: 0.5rem; color: var(--text); text-decoration: none; }
-        .contact-item:hover { color: var(--accent); }
-        
-        /* Sections */
-        .section { padding: 5rem 0; }
-        .section-header { margin-bottom: 3rem; text-align: center; }
-        .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem; }
-        .section-subtitle { font-size: 1.125rem; color: var(--text-light); }
-        
-        /* Cards & Grids */
-        .grid { display: grid; gap: 2rem; }
-        .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-        .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-        
-        .card { background: white; padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow); transition: var(--transition); }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
-        .card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--primary); display: flex; align-items: center; gap: 0.75rem; }
-        .card h3 i { color: var(--accent); }
-        
-        /* Timeline */
-        .timeline { position: relative; border-left: 2px solid var(--border); padding-left: 2rem; margin-left: 1rem; }
-        .timeline-item { margin-bottom: 2.5rem; position: relative; }
-        .timeline-dot { position: absolute; left: -2.45rem; top: 0; width: 1rem; height: 1rem; background: var(--accent); border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 2px var(--border); }
-        .timeline-date { display: inline-block; background: var(--light); color: var(--accent); padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; }
-        .timeline-content { background: white; padding: 1.5rem; border-radius: var(--radius); box-shadow: var(--shadow); }
-        .timeline-title { font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 600; color: var(--primary); margin-bottom: 0.25rem; }
-        .timeline-company { font-size: 1rem; color: var(--text-light); margin-bottom: 1rem; font-weight: 500; }
-        .timeline-content ul { padding-left: 1.5rem; margin-top: 1rem; }
-        .timeline-content li { margin-bottom: 0.5rem; }
-        
-        /* Skills */
-        .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
-        .skill-tag { background: var(--light); color: var(--text); padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 500; border: 1px solid var(--border); }
-        
-        /* Buttons */
-        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: 600; text-decoration: none; border-radius: var(--radius); transition: var(--transition); border: none; cursor: pointer; }
-        .btn-primary { background: var(--accent); color: white; }
-        .btn-primary:hover { background: #2563eb; }
-        
-        /* Footer */
-        .footer { background: var(--primary); color: white; padding: 3rem 0; text-align: center; }
-        
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .hero-title { font-size: 2.5rem; }
+
+        :root {
+            --bg: #0d0d0d;
+            --surface: #161616;
+            --surface-hover: #1f1f1f;
+            --border: #2a2a2a;
+            --text: #fafafa;
+            --text-muted: #888888;
+            --accent: #e85d04;
+            --accent-hover: #f48c06;
+            --gradient: linear-gradient(135deg, #e85d04, #ffba08);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(13, 13, 13, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+
+        nav a {
+            font-size: 14px;
+            color: var(--text-muted);
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--text);
+        }
+
+        .cta-btn {
+            background: var(--gradient);
+            color: var(--bg);
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(232, 93, 4, 0.3);
+        }
+
+        .hero {
+            padding: 160px 0 100px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 720px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        .hero-badge span {
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(40px, 6vw, 64px);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 .highlight {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 540px;
+            margin-bottom: 40px;
+        }
+
+        .hero-contact {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-muted);
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .contact-item:hover {
+            color: var(--text);
+        }
+
+        .section {
+            padding: 100px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .section-header {
+            margin-bottom: 48px;
+        }
+
+        .section-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .experience-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+            transition: border-color 0.2s;
+        }
+
+        .experience-item:hover {
+            border-color: #3a3a3a;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .experience-role {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .experience-company {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .experience-period {
+            font-size: 13px;
+            color: var(--text-muted);
+            background: var(--bg);
+            padding: 6px 12px;
+            border-radius: 100px;
+        }
+
+        .experience-tasks {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .experience-tasks li {
+            font-size: 14px;
+            color: var(--text-muted);
+            list-style: none;
+            position: relative;
+            padding-left: 16px;
+        }
+
+        .experience-tasks li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 5px;
+            height: 5px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .skill-category {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .skill-category-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skill-category-title span {
+            font-size: 18px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .skill-item {
+            font-size: 14px;
+            color: var(--text-muted);
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skill-item::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-size: 12px;
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .education-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .education-degree {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .education-school {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .education-year {
+            font-size: 13px;
+            color: var(--accent);
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .achievement-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        .achievement-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--gradient);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+
+        .achievement-text {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .achievement-text strong {
+            color: var(--text);
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        footer {
+            padding: 48px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .quote {
+            margin-top: 16px;
+            font-style: italic;
+            font-size: 14px;
+            color: var(--text-muted);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 640px) {
+            nav {
+                display: none;
+            }
+
+            .hero {
+                padding: 120px 0 60px;
+            }
+
+            .hero h1 {
+                letter-spacing: -1px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .hero-contact {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .experience-header {
+                flex-direction: column;
+                gap: 12px !important;
+            }
+        }
+
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(8px);
+            z-index: 200;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .modal-overlay.active .modal-card {
+            transform: scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .modal-close:hover {
+            background: var(--border);
+            color: var(--text);
+        }
+
+        .modal-avatar {
+            width: 90px;
+            height: 90px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--bg);
+            margin: 0 auto 20px;
+        }
+
+        .modal-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .modal-title {
+            font-size: 14px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 28px;
+        }
+
+        .modal-contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .modal-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 18px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            transition: all 0.2s;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .modal-contact-item:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .modal-contact-icon {
+            font-size: 18px;
+            width: 24px;
+            text-align: center;
+        }
+
+        .modal-contact-text {
+            text-align: left;
+        }
+
+        .modal-contact-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .modal-contact-value {
+            font-size: 14px;
+            font-weight: 500;
         }
     </style>
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="container">
-            <nav class="nav">
-                <a href="#" class="logo">AC</a>
-                <ul class="nav-links">
-                    <li><a href="#perfil">Perfil</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#formacion">Formación</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+            <a href="#" class="logo">Alejandro<span> Chávez</span></a>
+            <nav>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#formacion">Formación</a>
+                <a href="#logros">Logros</a>
             </nav>
+            <a href="#" class="cta-btn" onclick="openModal(event)">Contactar</a>
         </div>
     </header>
 
@@ -112,95 +602,92 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <i class="fas fa-check-circle"></i> Especialista Comercial & Marketing
+                    <span></span>
+                    Disponible para nuevos proyectos
                 </div>
-                <h1 class="hero-title">ALEJANDRO CHÁVEZ</h1>
-                <h2 class="hero-subtitle">Estrategias de Ventas, Marketing Digital & Gestión de Proyectos</h2>
-                
-                <div class="hero-contact">
+                <h1>Marketing Digital & <span class="highlight">Estrategias Comerciales</span></h1>
+                <p>Especialista en Marketing Digital, Estrategias Comerciales y Gestión de Clientes con +15 años de experiencia internacional. Experto en implementación de estrategias 360º, análisis de datos, optimización de procesos y liderazgo de equipos multidisciplinarios.</p>
+                <div class="hero-contact" id="contacto">
                     <a href="mailto:astroclick76@gmail.com" class="contact-item">
-                        <i class="fas fa-envelope"></i> astroclick76@gmail.com
+                        ✉️ astroclick76@gmail.com
                     </a>
                     <a href="tel:+541155998127" class="contact-item">
-                        <i class="fas fa-phone"></i> +54 11 5599-8127
+                        📞 +54 11 5599 8127
                     </a>
                     <span class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina
+                        📍 Buenos Aires, Argentina
                     </span>
                 </div>
-                <a href="cv.pdf" class="btn btn-primary" download>
-                    <i class="fas fa-download"></i> Descargar CV PDF
-                </a>
             </div>
         </div>
     </section>
 
-    <section class="section" id="perfil">
+    <section class="section" id="experiencia">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Perfil Profesional</h2>
+                <div class="section-label">Experiencia</div>
+                <h2 class="section-title">Trayectoria Profesional</h2>
             </div>
-            <div class="grid grid-2">
-                <div class="card">
-                    <h3><i class="fas fa-user-tie"></i> Sobre Mí</h3>
-                    <p>Especialista en Marketing Digital, Estrategias Comerciales y Gestión de Clientes con +15 años de experiencia internacional. Experto en implementación de estrategias 360º, análisis de datos, optimización de procesos y liderazgo de equipos multidisciplinarios.</p>
-                </div>
-                <div class="card">
-                    <h3><i class="fas fa-bullseye"></i> Enfoque</h3>
-                    <p>Orientado a resultados en sectores de tecnología, sistemas y gastronomía. "Transformo datos en decisiones, estrategias en resultados, y clientes en aliados."</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="experiencia" style="background: var(--light);">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Experiencia Profesional</h2>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2020 - 2023</div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Technical Customer Manager</h3>
-                        <div class="timeline-company">Paraíso Creativo C.A / Kodland Edu | Buenos Aires</div>
-                        <ul>
-                            <li>Gestión integral del ciclo de vida del cliente (postventa, retención, fidelización).</li>
-                            <li>Coordinación cross-functional entre equipos de ventas, soporte y docentes.</li>
-                            <li>Implementación de mejoras continuas en procesos y funcionalidades tecnológicas.</li>
-                            <li>Optimización de la experiencia del cliente con incremento del 35% en satisfacción.</li>
-                        </ul>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-role">Technical Customer Manager</div>
+                            <div class="experience-company">Paraíso Creativo C.A / Kodland Edu</div>
+                        </div>
+                        <span class="experience-period">2020 - 2023</span>
                     </div>
+                    <ul class="experience-tasks">
+                        <li>Gestión integral del ciclo de vida del cliente (postventa, retención, fidelización)</li>
+                        <li>Coordinación cross-functional entre equipos de ventas, soporte y docentes</li>
+                        <li>Implementación de mejoras continuas en procesos y funcionalidades tecnológicas</li>
+                        <li>Optimización de la experiencia del cliente con incremento del 35% en satisfacción</li>
+                    </ul>
                 </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2016 - 2019</div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Gerente de Ventas</h3>
-                        <div class="timeline-company">Avante Soluciones en Computación S.L | Yucatán, México</div>
-                        <ul>
-                            <li>Desarrollo e implementación de estrategias comerciales y de marketing B2B.</li>
-                            <li>Expansión de cartera de clientes en sector tecnológico (+12% crecimiento anual).</li>
-                            <li>Gestión de proyectos completos: requisitos, pruebas, control de calidad, postventa.</li>
-                        </ul>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-role">Gerente de Ventas</div>
+                            <div class="experience-company">Avante Soluciones en Computación S.L</div>
+                        </div>
+                        <span class="experience-period">2016 - 2019</span>
                     </div>
+                    <ul class="experience-tasks">
+                        <li>Desarrollo e implementación de estrategias comerciales y de marketing B2B</li>
+                        <li>Expansión de cartera de clientes en sector tecnológico (+12% crecimiento anual)</li>
+                        <li>Gestión de proyectos completos: requisitos, pruebas, control de calidad, postventa</li>
+                        <li>Administración de relaciones estratégicas con clientes corporativos</li>
+                    </ul>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2000 - 2015</div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Jefe de Almacén & Coordinador de Eventos</h3>
-                        <div class="timeline-company">Colorificio Pordecar C.A / Dynapro C.A | Valencia, Venezuela</div>
-                        <ul>
-                            <li>Planificación y optimización del flujo logístico y de eventos.</li>
-                            <li>Supervisión operativa, coordinación de equipos (+5 personas) y presupuestos.</li>
-                            <li>Implementación de sistemas de control de calidad y mejora de procesos.</li>
-                        </ul>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-role">Jefe de Almacén</div>
+                            <div class="experience-company">Colorificio Pordecar C.A</div>
+                        </div>
+                        <span class="experience-period">2000 - 2015</span>
                     </div>
+                    <ul class="experience-tasks">
+                        <li>Planificación y optimización del flujo logístico de mercancías</li>
+                        <li>Supervisión operativa y administrativa de almacén</li>
+                        <li>Coordinación de equipos logísticos (+5 personas)</li>
+                        <li>Implementación de sistemas de control de calidad y mejora de procesos</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-role">Coordinador de Eventos</div>
+                            <div class="experience-company">Dynapro C.A</div>
+                        </div>
+                        <span class="experience-period">2000 - 2015</span>
+                    </div>
+                    <ul class="experience-tasks">
+                        <li>Planificación y ejecución de eventos corporativos, sociales y artísticos</li>
+                        <li>Desarrollo de propuestas creativas: concepto, temática, ambientación</li>
+                        <li>Diseño de planes de trabajo, logística y requerimientos técnicos</li>
+                        <li>Gestión de presupuestos y proveedores</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -209,77 +696,90 @@
     <section class="section" id="habilidades">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Habilidades & Especialización</h2>
+                <div class="section-label">Habilidades</div>
+                <h2 class="section-title">Competencias Clave</h2>
             </div>
-            
-            <div class="grid grid-3">
-                <div class="card">
-                    <h3><i class="fas fa-chart-line"></i> Marketing & Ventas</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Estrategias 360º</span>
-                        <span class="skill-tag">Ventas B2B</span>
-                        <span class="skill-tag">Fidelización</span>
-                        <span class="skill-tag">Data Analytics</span>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-title">
+                        <span>📊</span> Marketing & Ventas
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">Estrategias de Marketing Digital 360º</div>
+                        <div class="skill-item">Gestión de Redes Sociales</div>
+                        <div class="skill-item">Email Marketing y Automatización</div>
+                        <div class="skill-item">Análisis de Datos y Web Analytics</div>
+                        <div class="skill-item">Ventas B2B y Desarrollo Comercial</div>
                     </div>
                 </div>
-                
-                <div class="card">
-                    <h3><i class="fas fa-users"></i> Gestión & Liderazgo</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Proyectos Ágiles</span>
-                        <span class="skill-tag">Liderazgo de Equipos</span>
-                        <span class="skill-tag">Control de Calidad (QA)</span>
-                        <span class="skill-tag">Comunicación Efectiva</span>
+                <div class="skill-category">
+                    <div class="skill-category-title">
+                        <span>💻</span> Tecnología & Sistemas
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">Conocimientos Técnicos en Sistemas</div>
+                        <div class="skill-item">Lenguajes de Programación Básicos</div>
+                        <div class="skill-item">Herramientas de Analytics y CRM</div>
+                        <div class="skill-item">Plataformas de E-commerce</div>
+                        <div class="skill-item">Automatización de Procesos</div>
                     </div>
                 </div>
-                
-                <div class="card">
-                    <h3><i class="fas fa-laptop-code"></i> Tecnología</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Sistemas IT</span>
-                        <span class="skill-tag">Programación Básica</span>
-                        <span class="skill-tag">CRM</span>
-                        <span class="skill-tag">E-commerce</span>
+                <div class="skill-category">
+                    <div class="skill-category-title">
+                        <span>👥</span> Gestión & Liderazgo
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">Coordinación de Equipos Multidisciplinarios</div>
+                        <div class="skill-item">Gestión de Proyectos Ágiles</div>
+                        <div class="skill-item">Control de Calidad (QA) y Mejora Continua</div>
+                        <div class="skill-item">Optimización de Procesos Operativos</div>
+                        <div class="skill-item">Comunicación Comercial Efectiva</div>
                     </div>
                 </div>
-            <div class="card">
-                    <h3><i class="fas fa-globe"></i> Idiomas</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Español (Nativo)</span>
-                        <span class="skill-tag">Inglés (Intermedio)</span>
+                <div class="skill-category">
+                    <div class="skill-category-title">
+                        <span>🎯</span> Sectores Específicos
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">Gastronomía: Amplia experiencia en sector alimenticio</div>
+                        <div class="skill-item">Tecnología: Especialización en soluciones computacionales</div>
+                        <div class="skill-item">Educación Tech: Experiencia en edtech y plataformas educativas</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="formacion" style="background: var(--light);">
+    <section class="section" id="formacion">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Formación Académica & Cursos</h2>
+                <div class="section-label">Formación</div>
+                <h2 class="section-title">Educación & Certificaciones</h2>
             </div>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Universitario en Publicidad y Mercadeo</h3>
-                        <div class="timeline-company">Universidad de Nuevas Profesiones</div>
-                    </div>
+            <div class="education-grid">
+                <div class="education-item">
+                    <div class="education-degree">Universitario en Publicidad y Mercadeo</div>
+                    <div class="education-school">Universidad de Nuevas Profesiones</div>
                 </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Cursos y Certificaciones Recientes</h3>
-                        <ul>
-                            <li>Marketing Digital - Google Digital Garage</li>
-                            <li>Emociones del Mercado - Mareas Red-Blue</li>
-                            <li>Data Analytics para Negocios - Coursera</li>
-                            <li>Gestión de Proyectos Ágiles - Scrum.org</li>
-                            <li>Customer Experience Management - HubSpot Academy</li>
-                        </ul>
-                    </div>
+                <div class="education-item">
+                    <div class="education-degree">Marketing Digital</div>
+                    <div class="education-school">Google Digital Garage</div>
+                </div>
+                <div class="education-item">
+                    <div class="education-degree">Data Analytics para Negocios</div>
+                    <div class="education-school">Coursera</div>
+                </div>
+                <div class="education-item">
+                    <div class="education-degree">Gestión de Proyectos Ágiles</div>
+                    <div class="education-school">Scrum.org</div>
+                </div>
+                <div class="education-item">
+                    <div class="education-degree">Customer Experience Management</div>
+                    <div class="education-school">HubSpot Academy</div>
+                </div>
+                <div class="education-item">
+                    <div class="education-degree">Emociones del Mercado</div>
+                    <div class="education-school">Mareas Red-Blue</div>
                 </div>
             </div>
         </div>
@@ -288,44 +788,106 @@
     <section class="section" id="logros">
         <div class="container">
             <div class="section-header">
+                <div class="section-label">Resultados</div>
                 <h2 class="section-title">Logros Destacados</h2>
             </div>
-            <div class="grid grid-2">
-                <div class="card">
-                    <h3><i class="fas fa-trophy"></i> Satisfacción y Fidelización</h3>
-                    <p>✅ Incremento del 35% en satisfacción del cliente mediante mejoras en procesos.</p>
-                    <p>✅ Desarrollo de estrategias de marketing que aumentaron engagement en redes sociales en +60%.</p>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <div class="achievement-icon">✓</div>
+                    <div class="achievement-text">
+                        <strong>+35%</strong>
+                        Incremento en satisfacción del cliente mediante mejoras en procesos
+                    </div>
                 </div>
-                <div class="card">
-                    <h3><i class="fas fa-chart-bar"></i> Crecimiento y Optimización</h3>
-                    <p>✅ Expansión de cartera de clientes en +40% anual en sector tecnológico.</p>
-                    <p>✅ Implementación exitosa de sistemas de control de calidad con reducción del 25% en errores.</p>
+                <div class="achievement-item">
+                    <div class="achievement-icon">✓</div>
+                    <div class="achievement-text">
+                        <strong>-25%</strong>
+                        Reducción en errores tras implementación de sistemas de control de calidad
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">✓</div>
+                    <div class="achievement-text">
+                        <strong>+40%</strong>
+                        Expansión anual de cartera de clientes en sector tecnológico
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">✓</div>
+                    <div class="achievement-text">
+                        <strong>+60%</strong>
+                        Incremento en engagement de redes sociales mediante estrategias de marketing
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="contacto" style="background: var(--primary); color: white; border-radius: var(--radius); margin-bottom: 2rem;">
-        <div class="container" style="text-align: center;">
-            <h2 class="section-title" style="color: white; margin-bottom: 2rem;">¿Listo para trabajar juntos?</h2>
-            <div class="hero-contact" style="justify-content: center; margin-bottom: 2rem;">
-                <a href="mailto:astroclick76@gmail.com" class="contact-item" style="color: white;">
-                    <i class="fas fa-envelope"></i> astroclick76@gmail.com
-                </a>
-                <a href="https://github.com/astroclick76" class="contact-item" style="color: white;" target="_blank">
-                    <i class="fab fa-github"></i> github.com/astroclick76
-                </a>
-            </div>
-            <a href="mailto:astroclick76@gmail.com" class="btn btn-primary" style="background: white; color: var(--primary);">
-                Contáctame Ahora
-            </a>
-        </div>
-    </section>
-
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <p>&copy; 2026 Alejandro Chávez. Todos los derechos reservados.</p>
+            <p class="footer-text">Alejandro Chávez &mdash; Buenos Aires, Argentina</p>
+            <p class="quote">"Transformo datos en decisiones, estrategias en resultados, y clientes en aliados."</p>
         </div>
     </footer>
+
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div class="modal-avatar">AC</div>
+            <div class="modal-name">Alejandro Chávez</div>
+            <div class="modal-title">Marketing Digital & Estrategias Comerciales</div>
+            <div class="modal-contact-list">
+                <a href="mailto:astroclick76@gmail.com" class="modal-contact-item">
+                    <span class="modal-contact-icon">✉️</span>
+                    <div class="modal-contact-text">
+                        <div class="modal-contact-label">Email</div>
+                        <div class="modal-contact-value">astroclick76@gmail.com</div>
+                    </div>
+                </a>
+                <a href="tel:+541155998127" class="modal-contact-item">
+                    <span class="modal-contact-icon">📞</span>
+                    <div class="modal-contact-text">
+                        <div class="modal-contact-label">Teléfono</div>
+                        <div class="modal-contact-value">+54 11 5599 8127</div>
+                    </div>
+                </a>
+                <div class="modal-contact-item">
+                    <span class="modal-contact-icon">📍</span>
+                    <div class="modal-contact-text">
+                        <div class="modal-contact-label">Ubicación</div>
+                        <div class="modal-contact-value">Buenos Aires, Argentina</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('contactModal');
+
+        function openModal(e) {
+            e.preventDefault();
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
 </body>
 </html>
